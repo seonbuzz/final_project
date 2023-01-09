@@ -31,3 +31,8 @@
 .menu a:hover {
   background: darkgray;
 }
+
+#heart {
+  cursor: pointer;
+  color: cornflowerblue;
+}
