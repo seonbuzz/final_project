@@ -1,0 +1,408 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -11.666666203075001,
+    "scrollLeft": -19.999999205271436,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "member",
+        "comment": "회원",
+        "columns": [
+          {
+            "name": "mbr_seq",
+            "comment": "회원일련번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 80,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "09ff801a-1c79-4f37-8234-207763416bc2"
+          },
+          {
+            "name": "mbr_id",
+            "comment": "아이디",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "975415c2-572e-4cff-acc7-11237683a242"
+          },
+          {
+            "name": "mbr_nm",
+            "comment": "이름",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "07f7d01a-f5e9-485f-9fcb-7320722f3f4c"
+          },
+          {
+            "name": "mbr_ath",
+            "comment": "권한",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "b102974c-deac-4a88-9d7c-4cc7d039425d"
+          },
+          {
+            "name": "mbr_pwd",
+            "comment": "비밀번호",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "c896f401-61b4-4a35-afd7-fbd27cef09a8"
+          },
+          {
+            "name": "mbr_birth_day",
+            "comment": "생년월일",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.09716796875,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "b720634f-b62b-4d4f-ace0-490e2aa40624"
+          },
+          {
+            "name": "mbr_phone",
+            "comment": "휴대전화",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.76806640625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "07164d2e-3e4b-4911-a99c-2e20c859013f"
+          },
+          {
+            "name": "mbr_email",
+            "comment": "이메일",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.68359375,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "6244ab2e-10a7-4e64-92f1-6cfc2067902d"
+          },
+          {
+            "name": "reg_dt",
+            "comment": "가입일시",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "eb6b7b3f-3c4a-4ecd-ad1a-7f54db14fb05"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 70.0004,
+          "top": 59.1671,
+          "zIndex": 182,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "2285bce0-a54d-461a-9ce7-fbaa8cfd978e"
+      },
+      {
+        "name": "buyer",
+        "comment": "고객",
+        "columns": [
+          {
+            "name": "mbr_seq",
+            "comment": "회원일련번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 80,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6a34c03e-e74e-49fe-a436-b01a642be173"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 625.8333,
+          "top": 76.6668,
+          "zIndex": 180,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "8af272e5-5293-472d-8e70-41ad75e3fc90"
+      },
+      {
+        "name": "seller",
+        "comment": "딜러",
+        "columns": [
+          {
+            "name": "mbr_seq",
+            "comment": "회원일련번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 80,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "757a7bbe-f1f2-4da6-88c1-d1eeb202cf2c"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 625.8317,
+          "top": 205.8332,
+          "zIndex": 184,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "503f57ca-7f17-46fe-b3f2-c80ada71cd41"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "2285bce0-a54d-461a-9ce7-fbaa8cfd978e",
+          "columnIds": [
+            "09ff801a-1c79-4f37-8234-207763416bc2"
+          ],
+          "x": 468.85635703125,
+          "y": 122.5421,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "8af272e5-5293-472d-8e70-41ad75e3fc90",
+          "columnIds": [
+            "6a34c03e-e74e-49fe-a436-b01a642be173"
+          ],
+          "x": 625.8333,
+          "y": 121.4168,
+          "direction": "left"
+        },
+        "constraintName": "fk_member_to_buyer",
+        "visible": true,
+        "id": "169d34ad-5d9a-4c05-bcf3-bafecf9d9d66"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "2285bce0-a54d-461a-9ce7-fbaa8cfd978e",
+          "columnIds": [
+            "09ff801a-1c79-4f37-8234-207763416bc2"
+          ],
+          "x": 468.85635703125,
+          "y": 249.2921,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "503f57ca-7f17-46fe-b3f2-c80ada71cd41",
+          "columnIds": [
+            "757a7bbe-f1f2-4da6-88c1-d1eeb202cf2c"
+          ],
+          "x": 625.8317,
+          "y": 250.5832,
+          "direction": "left"
+        },
+        "constraintName": "fk_member_to_seller",
+        "visible": true,
+        "id": "d09e406b-b353-43b1-8f07-a1966b35aa5f"
+      }
+    ]
+  }
+}
