@@ -7,10 +7,10 @@
   font-size: 12px;
 }
 .nav-area {
-  background: black;
+  background: cornflowerblue;
 }
 .nav-area div {
-  background: black;
+  background: cornflowerblue;
 }
 
 .menu {
@@ -29,7 +29,7 @@
   line-height: 50px;
 }
 .menu a:hover {
-  background: darkgray;
+  background: whitesmoke;
 }
 
 #heart {
