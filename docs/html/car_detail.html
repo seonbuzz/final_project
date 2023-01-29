@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/car_detail.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -112,105 +112,70 @@
     <br />
     <br /> -->
 
-    <!-- 캐러셀 안먹음. -->
-    <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- 차량 사진 -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#myCarousel"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="0"
-          class=""
+          class="active"
+          aria-current="true"
           aria-label="Slide 1"
         ></button>
         <button
           type="button"
-          data-bs-target="#myCarousel"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="1"
           aria-label="Slide 2"
-          class="active"
-          aria-current="true"
         ></button>
         <button
           type="button"
-          data-bs-target="#myCarousel"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="2"
           aria-label="Slide 3"
-          class=""
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active carousel-item-start">
-          <svg
-            class="bd-placeholder-img"
-            width="100%"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <img
-                src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_calligraphy_exclusive_full_option_and_calligraphy_full_option.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item carousel-item-next carousel-item-start">
-          <svg
-            class="bd-placeholder-img"
-            width="100%"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-
-          <div class="container">
-            <div class="carousel-caption">
-              <img
-                src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_design_rear_side_view.png"
-                alt=""
-              />
-            </div>
+        <div class="carousel-item active">
+          <img
+            src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_calligraphy_exclusive_full_option_and_calligraphy_full_option.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>신형 그랜저 모델</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <svg
-            class="bd-placeholder-img"
-            width="100%"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <rect width="100%" height="100%" fill="#777"></rect>
-          </svg>
-
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <img
-                class="w-100"
-                src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_space_interior.png"
-                alt=""
-              />
-            </div>
+          <img
+            src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_design_rear_side_view.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>차량 외부</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="w-100"
+            src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_space_interior.png"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>차량 내부</h5>
           </div>
         </div>
       </div>
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#myCarousel"
+        data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -219,78 +184,63 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#myCarousel"
+        data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div> -->
-    <div class="container">
-      <!-- 차량 사진 -->
-      <div>
-        <div
-          id="carouselControlId"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                class="w-100"
-                src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_calligraphy_exclusive_full_option_and_calligraphy_full_option.png"
-                alt=""
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="w-100"
-                src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_design_rear_side_view.png"
-                alt=""
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="w-100"
-                src="https://www.hyundai.com/static/images/model/grandeur-hybrid/23fc/the_all_new_grandeur_hybrid_space_interior.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            data-bs-target="#carouselControlId"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            data-bs-target="#carouselControlId"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </div>
+    </div>
 
+    <!-- 차량 정보 -->
+    <div class="container">
       <br /><br />
-      <!-- 차량 정보 -->
+
       <div class="row mb-3">
         <div class="col-6">
           <div class="card text-center">
-            <div class="card-header fs-2">차량 정보</div>
+            <h3 class="card-header">차량 정보</h3>
             <div class="card-body">
-              <h5>(23허0101) 그랜져 하이브리드</h5>
-              <div>2020년 3월 | 70,123km | 자동(오토)</div>
-              <br />
-              <div class="add" id="inputList">
-                찜하기
-                <!-- 하트 가운데에 오게 하는 법 생각하기 -->
-                <span>
-                  <i class="material-icons" id="heart">favorite_border</i>
+              <div style="display: flex">
+                <div
+                  class="rounded-pill bg-secondary text-white m-2"
+                  style="width: 8rem"
+                >
+                  차량진단 완료
+                </div>
+                <span
+                  class="rounded-pill bg-warning text-white m-2"
+                  style="width: 8rem"
+                >
+                  중고차 시세
                 </span>
               </div>
+              <h5 style="font-weight: 600">(23허0101) 그랜져 하이브리드</h5>
+              <div class="text-muted p-2">
+                2020년 3월 | 70,123km | 자동(오토)
+              </div>
+              <strong class="add" id="inputList">
+                찜하기
+                <!-- 찜버튼 js 나중에 추가 -->
+                <span style="display: inline-block">
+                  <i
+                    class="material-icons rounded-circle bg-light"
+                    style="
+                      width: 3rem;
+                      height: 3rem;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                    id="heart"
+                    >favorite_border</i
+                  >
+                </span>
+              </strong>
+              <h4 style="font-weight: 700; margin-top: 10px">
+                판매가격
+                <span class="font-weight-bold text-primary">2,000만원</span>
+              </h4>
             </div>
             <!-- 모달 -->
             <div>
@@ -304,7 +254,7 @@
             <div class="modal" id="modalTarget">
               <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
-                  <div class="modal-header">할부금 계산하기</div>
+                  <h2 class="modal-header">할부금 계산하기</h2>
                   <div class="modal-body">
                     <h4 class="align-items-center mb-3">
                       <span class="badge bg-primary rounded-pill">총 비용</span>
@@ -401,11 +351,20 @@
         <!-- 딜러 정보 -->
         <div class="col-6">
           <div class="card text-center">
-            <div class="card-header fs-2">딜러 정보</div>
+            <h3 class="card-header">딜러 정보</h3>
             <div class="card-body">
-              <div>홍길동</div>
-              <p class="text-gray">전화번호:010-1234-1234</p>
-              <p class="text-gray">판매중 : 20대 | 판매완료 : 3대</p>
+              <div class="box" style="background: #bdbdbd">
+                <img
+                  class="profile"
+                  src="https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1705/tuktukdesign170500020/77461809-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%B2%A1%ED%84%B0-%EB%82%A8%EC%9E%90-%EC%82%AC%EB%9E%8C-%ED%94%84%EB%A1%9C%ED%95%84-%EC%95%84%EB%B0%94%ED%83%80-%EA%B8%80%EB%A6%AC%ED%94%84-%ED%94%BD%ED%86%A0%EA%B7%B8%EB%9E%A8-%EC%8B%AC%EB%B3%BC-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4%EC%85%98.jpg?ver=6"
+                />
+              </div>
+              <h5 style="font-weight: 600; margin-bottom: 10px">홍길동</h5>
+              <p class="text-muted">전화번호:010-1234-1234</p>
+              <p class="text-muted">
+                판매중 : <span class="text-danger">20대 </span>| 판매완료 :
+                <span class="text-danger"> 3대</span>
+              </p>
             </div>
             <div>
               <button class="m-2 btn btn-outline-warning">방문 예약</button>
@@ -413,7 +372,7 @@
                 <a
                   href="#modalTarget2"
                   data-bs-toggle="modal"
-                  class="m-2 btn btn-primary"
+                  class="m-2 btn btn-outline-primary"
                   >1:1 상담 요청</a
                 >
               </span>
@@ -535,7 +494,7 @@
           </table>
         </div>
         <div class="col-md-5">
-          <img src="../image/주요 골격.jpeg" alt="" width="400" />
+          <img src="../image/주요 골격.png" alt="" width="400" />
           <!-- <svg
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
             width="500"
