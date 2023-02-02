@@ -5,6 +5,7 @@
 
 *{
     font-family: 'Noto Serif KR', serif;
+    border: 1px solid gray;
 }
 .cs-main{
     font-family: 'Noto Sans KR', sans-serif;
