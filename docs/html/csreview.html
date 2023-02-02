@@ -15,6 +15,7 @@
 
 <body>
     <header>
+        
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container">
@@ -60,86 +61,116 @@
         </nav>
     </header>
     <main>
-        <div class="container m-3">
-
-            <div class="card" style="width:18rem;">
-
-                <div class="card-body">
-                    <h4 class="card-title">엄복동 딜러</h4>
-                    <h6 class="card-subtitle mb-2 text-muted ">중고차 딜러</h6>
-                    <table>
-                        <tr style="text-align : center">
-                            <th>거래평점</td>
-                            <td>친절도</td>
-                            <td>★★★★☆</td>
-                        </tr>
-                        <tr style="text-align : center">
-                            <th class="h2">4.5</td>
-                            <td>신뢰도</td>
-                            <td>★★★★☆</td>
-                        </tr>
-                        <tr style="text-align : center">
-                            <td>★★★★☆</td>
-                            <td>가격만족도</td>
-                            <td>★★★★☆</td>
-                        </tr>
-                    </table>
-                    <p class="card-text">고객님을 위해 최선을 다하겠습니다. 믿고 맡겨주세요.</p>
-                </div>
-                <!-- Modal trigger button -->
-                <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-                    후기
-                </button>
-            </div>
-
-
-            <!-- Modal Body -->
-            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-            <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-                role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">총 5개의 고객후기가 있습니다.</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="h4"></div>
-                            <table>
-                                <tr>
-                                    <td>2022-09-01 |</td>
-                                    <td>차량 구매 |</td>
-                                    <td>마*석</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">제네시스 G90 3.3T GDi AWD
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div>6,940만원</div>
-                                        <div>★★★★☆ 4.0</div>
-                                        <div><a href="http://">더 많은 후기 보기</a></div>
-                                    </td>
-                                </tr>
-
-                            </table>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+                    <div
+                        class="d-flex flex-column align-items-center align-items-sm-start px-4 pt-5 text-white min-vh-100">
+                        <a href="#"
+                            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                            <span class="fs-4 d-none d-sm-inline">딜러 찾기</span>
+                        </a>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li>
+                                <span><input type="text" name="" id="" class="nav-input" style="text-align:center; height: 35px;width:100px;"></span>
+                                        <span><button class="btn btn-outline-success" type="submit"
+                                            onclick="location.href='#'">검색</button></span> 
+                                <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <!-- contents start-->
+                <div class="container m-3">
+                    <h2>조회된 딜러</h2>
+                    <div class="card" style="width:18rem;">
+                        <div class="card-body">
+                            <h4 class="card-title">엄복동 딜러</h4>
+                            <h6 class="card-subtitle mb-2 text-muted ">중고차 딜러</h6>
+                            <table>
+                                <tr style="text-align : center">
+                                    <th>거래평점</td>
+                                    <td>친절도</td>
+                                    <td>★★★★☆</td>
+                                </tr>
+                                <tr style="text-align : center">
+                                    <th class="h2">4.5</td>
+                                    <td>신뢰도</td>
+                                    <td>★★★★☆</td>
+                                </tr>
+                                <tr style="text-align : center">
+                                    <td>★★★★☆</td>
+                                    <td>가격만족도</td>
+                                    <td>★★★★☆</td>
+                                </tr>
+                            </table>
+                            <p class="card-text">고객님을 위해 최선을 다하겠습니다. 믿고 맡겨주세요.</p>
+                        </div>
+                        <!-- Modal trigger button -->
+                        <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                            후기
+                        </button>
+                    </div>
+        
+        
+                    <!-- Modal Body -->
+                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTitleId">총 5개의 고객후기가 있습니다.</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="h4"></div>
+                                    <table>
+                                        <tr>
+                                            <td>2022-09-01 |</td>
+                                            <td>차량 구매 |</td>
+                                            <td>마*석</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">제네시스 G90 3.3T GDi AWD
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div>6,940만원</div>
+                                                <div>★★★★☆ 4.0</div>
+                                                <div><a href="http://">더 많은 후기 보기</a></div>
+                                            </td>
+                                        </tr>
+        
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <!-- Optional: Place to the bottom of scripts -->
+                    <script>
+                        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+        
+                    </script>
+        
+                </div>
+                <!-- contents end -->
             </div>
-
-
-            <!-- Optional: Place to the bottom of scripts -->
-            <script>
-                const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-
-            </script>
-
         </div>
+
+        
+        
     </main>
     <footer>
         <!-- place footer here -->
