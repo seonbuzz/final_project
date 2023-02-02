@@ -1,6 +1,6 @@
 * {
   font-family: "Georgia, " 맑은 고딕 ", serif;";
-  color: rgb(15, 54, 182);
+  color: rgb(24, 63, 195);
 }
 
 .logofont {
@@ -17,7 +17,7 @@
 }
 
 .fontcolor > a {
-  color: rgb(15, 54, 182);
+  color: rgb(51, 79, 171);
 }
 
 @font-face {
@@ -27,3 +27,22 @@
   font-weight: normal;
   font-style: normal;
 }
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #fafafa;
+  color: rgb(72, 72, 210);
+  border: 1px solid rgb(148, 161, 232);
+  padding: 4px;
+  border-radius: 9px;
+}
+.button {
+  color: rgb(72, 72, 210);
+  background: #fafafa;
+  border: 1px solid rgb(177, 177, 227);
+  border-radius: 9px;
+  padding: 4px;
+}
+/* .search {
+  text-align: center;
+} */
