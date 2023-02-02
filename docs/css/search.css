@@ -9,6 +9,7 @@
 
 .menu {
   background-color: rgb(245, 244, 241);
+  /* margin-bottom: 5px; */
 }
 
 .footer {
@@ -43,6 +44,9 @@ select {
   border-radius: 9px;
   padding: 4px;
 }
-/* .search {
-  text-align: center;
-} */
+.navmenu {
+  margin-bottom: 10px;
+}
+.carouselslide {
+  margin-top: 100px;
+}
