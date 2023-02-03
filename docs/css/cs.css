@@ -33,6 +33,15 @@
     margin-top: 20px;
     margin-left: 20px;
 }
+.delete-btn{
+    position: relative;
+    left: 87%;
+}
+
+.btn-back{
+    position: relative;
+    left: 87%;
+}
 
 .wid{
     width: 150px;
