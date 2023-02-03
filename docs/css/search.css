@@ -50,3 +50,27 @@ select {
 .carouselslide {
   margin-top: 100px;
 }
+/* .borderbox {
+  background-color: rgb(244, 247, 249);
+
+  border: 1px solid rgb(242, 236, 236);
+  margin-right: auto;
+  margin-left: auto;
+  width: 800px;
+  height: 250px;
+  border-radius: 9px;
+} */
+div > a {
+  text-decoration: none !important;
+  color: rgb(10, 43, 208);
+}
+span > a {
+  text-decoration: none !important;
+  color: rgb(40, 40, 225);
+}
+a:hover {
+  text-decoration: none !important;
+}
+.car_price {
+  color: black;
+}
