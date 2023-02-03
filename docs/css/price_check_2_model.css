@@ -1,0 +1,124 @@
+.title{
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(218, 218, 218);
+} 
+
+.searchBar {
+    margin: 1rem 0;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 0 20px;
+    width: 200px;
+}
+
+.searchTitle{
+    font-size: 15px;
+    font-weight: 500;
+    color: #6495ed;
+    margin: 20px 0;
+    border-bottom : 1px solid #6495ed;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.content{
+    width: 1000px;
+    flex: 1;
+}
+
+.searchSelect{
+    margin: 10px auto;
+}
+
+.menus {
+    margin: 10px;
+    border-bottom: 2px solid #6495ed;
+}
+.menus > span{
+    margin: 0 10px;
+}
+
+.menus > span > a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.filterName {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.colorC1{
+    border: 1px solid black;
+    cursor:pointer;
+    background-color: black;
+    border-radius: 2em;
+    padding: 15px;
+}
+
+.carInfo {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.brandLogo{
+    margin: 20px;
+}
+
+.filterBtn {
+border: 0px;
+border-radius: 15px;
+padding: 5px;
+font-size: 14px;
+}
+
+.searchResult{
+    margin: 10px;
+    border-top: 1px solid gainsboro;
+}
+
+#alignment{
+    width: 150px;
+}
+
+.searchResultTitle{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carInfoCircle{
+    border: 2px solid #6495ed;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.circleFirst{
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+    margin: 10px auto 2px auto;
+}
+
+.circleSecond{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.carInfoCircles{
+    display: flex;
+}
+
+.priceCheckTable{
+    width: 100%;
+}
