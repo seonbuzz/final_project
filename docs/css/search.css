@@ -1,6 +1,7 @@
 * {
-  font-family: "Georgia, " 맑은 고딕 ", serif;";
+  /* font-family: "Georgia, " 맑은 고딕 ", serif;"; */
   color: rgb(24, 63, 195);
+  font-family: Dotum;
 }
 
 .logofont {
@@ -22,9 +23,11 @@
 }
 
 @font-face {
-  font-family: "Georgia, " 맑은 고딕 ", serif";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff")
-    format("woff");
+  font-family: Dotum;
+  src: url("./Dotum.otf");
+  /* font-family: gulim;
+  src: url("./gulim.otf"); */
+
   font-weight: normal;
   font-style: normal;
 }
@@ -34,8 +37,13 @@ select {
   background: #fafafa;
   color: rgb(72, 72, 210);
   border: 1px solid rgb(148, 161, 232);
-  padding: 4px;
+  padding-left: 8px;
   border-radius: 9px;
+  /* margin-left: 10px; */
+  margin-right: 20px;
+
+  width: 150px;
+  height: 50px;
 }
 .button {
   color: rgb(72, 72, 210);
@@ -43,6 +51,12 @@ select {
   border: 1px solid rgb(177, 177, 227);
   border-radius: 9px;
   padding: 4px;
+  margin-left: 8px;
+  margin-top: 3px;
+  width: 50px;
+  height: 45px;
+
+  /* display: inline-block; */
 }
 .navmenu {
   margin-bottom: 10px;
@@ -73,4 +87,8 @@ a:hover {
 }
 .car_price {
   color: black;
+}
+.choice {
+  /* font-family: gulim; */
+  font-weight: 900;
 }
