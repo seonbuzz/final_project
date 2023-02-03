@@ -32,3 +32,17 @@
     /* grid-template-rows: 120px 310px 890px 130px; */
     gap: 10px; /* 구역간의 간격 */
   }
+.edit-btn{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin-left: 10px;
+}
+.edit-btn:hover{
+    border: 1px solid gray;
+    background-color: beige;
+}
+.info-table{
+    padding-bottom: 10px;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+}
