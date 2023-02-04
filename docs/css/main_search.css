@@ -29,7 +29,6 @@
   src: url("./Dotum.otf");
   /* font-family: gulim;
   src: url("./gulim.otf"); 
-
   font-weight: normal;
   font-style: normal;
 } */
@@ -68,7 +67,6 @@ select {
 }
 /* .borderbox {
   background-color: rgb(244, 247, 249);
-
   border: 1px solid rgb(242, 236, 236);
   margin-right: auto;
   margin-left: auto;
