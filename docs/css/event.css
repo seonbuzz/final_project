@@ -1,13 +1,17 @@
-/* .product-device {
+.event-contents {
+  padding: 80px 0 140px;
+  /* border: 1px solid black; */
+}
+.product-device {
   position: absolute;
   right: 10%;
-  bottom: -30%;
+  bottom: -10%;
   width: 300px;
   height: 540px;
-  background-color: #333;
+  /* background-color: #333; */
   border-radius: 21px;
-  transform: rotate(30deg);
-} */
+  /* transform: rotate(30deg); */
+}
 /* @media (min-width: 768px)
 .d-md-block {
     display: block!important;
