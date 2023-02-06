@@ -1,0 +1,27 @@
+*{
+    /* border: 1px solid gray; */
+}
+.register_step{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.register_step > h5 {
+    padding: 5px 1rem;
+    border-bottom: 2px solid gainsboro;
+}
+
+#active_step {
+    border-bottom: 2px solid navy;
+    color: navy;
+}
+
+table{
+    margin: 0px auto;
+    width: 50rem;
+}
+
+#termsAndConditionsContent{
+    font-size: 14px;
+}

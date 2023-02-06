@@ -48,8 +48,8 @@
                 <a href="#" class="fs-5 nav-link px-2 link-dark">내 차 사기</a>
               </li>
               <li><a href="#" class="fs-5 nav-link ps-5 link-dark">시세</a></li>
-              <li><a href="#" class="fs-5 nav-link ps-5 link-dark">이벤트</a></li>
               <li><a href="#" class="fs-5 nav-link ps-5 link-dark">검색 </a></li>
+              <li><a href="#" class="fs-5 nav-link ps-5 link-dark">이벤트</a></li>
             </ul>
   
             <div class="dropdown text-end">
@@ -89,9 +89,10 @@
             <hr />
             <br />
             
-            <!-- 좌측 검색필터 -->
             <div class="container">
                 <div class="row mb-3">
+                    
+                    <!-- 좌측 검색필터 -->
                     <div class="col-3">
                         <div class="card text-center">
                             <h5 class="card-header">차량 검색</h3>
@@ -205,8 +206,371 @@
                         </div>
                     </div>
 
+                    <!-- 우측 검색결과 -->
+                    <div class="col-9">
+                        <div class="carInfo">
+                            <div>
+                                <h3 class="fw-bold">현대 더 뉴 그랜저 IG 하이브리드 2021년식</h3>
+                                <div class="fw-bold my-3 text-danger">금주 시세
+                                    <span class="h4 fw-bold">
+                                        3,193 ~ 3,894
+                                    </span>
+                                    만원
+                                    <a href="" class="btn btn-light btn-sm">신차가격표</a>
+                                </div>
+                                <div>
+                                    <div class="btn btn-secondary disabled btn-sm rounded-pill">검정색</div>
+                                    <div class="btn btn-secondary disabled btn-sm rounded-pill">무사고 기준</div>
+                                    <div class="btn btn-secondary disabled btn-sm rounded-pill">40,000km 기준</div>
+                                </div>
+                            </div>
+                            <div class="brandLogo">
+                                <img src="http://www.encar.com/images/pr/manufact/001.png?220414" alt="">
+                            </div>
+                        </div>
+                    
+                        <hr class="featurette-divider" />
+                        
+                        <!-- 검색 결과 및 정렬 -->
+                        <div class="searchResultTitle">
+                            <span class="small">검색결과 9대</span>
+                            <span>
+                                <select name="alignment" id="alignment" class="form-select form-select-sm" aria-label=".form-select-sm">
+                                    <option value="">최근등록일순</option>
+                                    <option value="">연식순</option>
+                                    <option value="">주행거리순</option>
+                                    <option value="">가격순</option>
+                                </select>
+                            </span>
+                        </div>
+                        
+                        <hr class="featurette-divider" />
+
+                        <!-- 검색 결과 리스트 -->
+
+                        <table class="priceCheckTable">
+                            <tr class="border-bottom">
+                                <td>
+                                    <!-- 차량 이미지 -->
+                                    <a href="">
+                                        <img src="http://file.carisyou.com/upload/2019/11/27/FILE_201911270320073070.png" alt="" width="150px" class="m-2">
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="fw-bold">
+                                        <a href="./car_detail_change.html" class="text-black">현대 더 뉴 그랜저 IG 하이브리드 르블랑</a>
+                                    </div>
+                                    <div class="fw-light small text-secondary">
+                                        <span>2022년 02월</span>
+                                        <span>14,391km</span>
+                                        <span>경기</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-5 fw-bold text-danger">
+                                            2,566
+                                        </span>
+                                        <span class="small">만원</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center my-2">
+                                        <div class="small">시세대비
+                                            <span class="text-primary">가격 낮음</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center my-2">
+                                        <div class="small">판매가능성
+                                            <span class="text-primary">가격 낮음</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center my-2">
+                                        <div class="small">신뢰도
+                                            <span class="text-primary">가격 낮음</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- 시세리포트 모달 -->
+                                <td>
+                                    <div class="mx-3">
+                                        <a href="#modalTarget1" class="btn btn-outline-danger rounded-pill fw-bold" data-bs-toggle="modal">시세 리포트</a>
+                                        <div class="modal" id="modalTarget1">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <div class="modal-title fs-5 fw-bold">
+                                                            시세 리포트
+                                                        </div>
+                                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="border-bottom">
+                                <td>
+                                    <!-- 차량 이미지 -->
+                                    <a href="">
+                                        <img src="http://file.carisyou.com/upload/2019/11/27/FILE_201911270320073070.png" alt="" width="150px" class="m-2">
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="fw-bold">
+                                        <a href="./car_detail_change.html" class="text-black">현대 더 뉴 그랜저 IG 하이브리드 르블랑</a>
+                                    </div>
+                                    <div class="fw-light small text-secondary">
+                                        <span>2022년 02월</span>
+                                        <span>14,391km</span>
+                                        <span>경기</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-5 fw-bold text-danger">
+                                            2,566
+                                        </span>
+                                        <span class="small">만원</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center my-2">
+                                        <div class="small">시세대비
+                                            <span class="text-primary">가격 낮음</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center my-2">
+                                        <div class="small">판매가능성
+                                            <span class="text-primary">높음</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center my-2">
+                                        <div class="small">신뢰도
+                                            <span class="text-primary">보통</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- 시세리포트 모달 -->
+                                <td>
+                                    <div class="mx-3">
+                                        <a href="#modalTarget1" class="btn btn-outline-danger rounded-pill fw-bold" data-bs-toggle="modal">시세 리포트</a>
+                                        <div class="modal" id="modalTarget1">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <div class="modal-title fs-5 fw-bold">
+                                                            시세 리포트
+                                                        </div>
+                                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="border-bottom">
+                                <td>
+                                    <!-- 차량 이미지 -->
+                                    <a href="">
+                                        <img src="http://file.carisyou.com/upload/2019/11/27/FILE_201911270320073070.png" alt="" width="150px" class="m-2">
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="fw-bold">
+                                        <a href="./car_detail_change.html" class="text-black ">현대 더 뉴 그랜저 IG 하이브리드 르블랑</a>
+                                    </div>
+                                    <div class="fw-light small text-secondary">
+                                        <span>2022년 02월</span>
+                                        <span>14,391km</span>
+                                        <span>경기</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-5 fw-bold text-danger">
+                                            2,566
+                                        </span>
+                                        <span class="small">만원</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center my-2">
+                                        <div class="small">시세대비
+                                            <span class="text-primary">가격 낮음</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center my-2">
+                                        <div class="small">판매가능성
+                                            <span class="text-primary">높음</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center my-2">
+                                        <div class="small">신뢰도
+                                            <span class="text-primary">보통</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- 시세리포트 모달 -->
+                                <td>
+                                    <div class="mx-3">
+                                        <a href="#modalTarget1" class="btn btn-outline-danger rounded-pill fw-bold" data-bs-toggle="modal">시세 리포트</a>
+                                        <div class="modal" id="modalTarget1">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <div class="modal-title fs-5 fw-bold">
+                                                            시세 리포트
+                                                        </div>
+                                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="border-bottom">
+                                <td>
+                                    <!-- 차량 이미지 -->
+                                    <a href="">
+                                        <img src="http://file.carisyou.com/upload/2019/11/27/FILE_201911270320073070.png" alt="" width="150px" class="m-2">
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="fw-bold">
+                                        <a href="./car_detail_change.html" class="text-black">현대 더 뉴 그랜저 IG 하이브리드 르블랑</a>
+                                    </div>
+                                    <div class="fw-light small text-secondary">
+                                        <span>2022년 02월</span>
+                                        <span>14,391km</span>
+                                        <span>경기</span>
+                                    </div>
+                                    <div>
+                                        <span class="fs-5 fw-bold text-danger">
+                                            2,566
+                                        </span>
+                                        <span class="small">만원</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center my-2">
+                                        <div class="small">시세대비
+                                            <span class="text-primary">가격 낮음</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center my-2">
+                                        <div class="small">판매가능성
+                                            <span class="text-primary">높음</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center my-2">
+                                        <div class="small">신뢰도
+                                            <span class="text-primary">보통</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- 시세리포트 모달 -->
+                                <td>
+                                    <div class="mx-3">
+                                        <a href="#modalTarget1" class="btn btn-outline-danger rounded-pill fw-bold" data-bs-toggle="modal">시세 리포트</a>
+                                        <div class="modal" id="modalTarget1">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <div class="modal-title fs-5 fw-bold">
+                                                            시세 리포트
+                                                        </div>
+                                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        </table>
+                        <div class="m-3">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a href="" class="page-link" aria-label="Prev"><span aria-hidden="true">&laquo;</span></a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link active">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="" class="page-link">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
+
+
+        <!-- 푸터 -->
+    <footer class="border-top pt-4 container">
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="../image/E6E5CE6B-B351-489A-83C1-2DBBFA0734DD.PNG"
+              alt=""
+              srcset=""
+              width="80%"
+              height="50%"
+            />
+            <!-- <small class="text-muted text-center"> <div>© 2023</div></small> -->
+          </div>
+          <div class="col-8">
+            <ul class="list-unstyled text-small">
+              <li class="text-secondary mb-1">
+                리투리 주식회사(주) | 대표자: 리투리 | 서울특별시 강남구 논현동
+              </li>
+              <li class="text-secondary mb-1">
+                사업자 등록번호 : 123-12-12345 | 통신판매업신고:서울논현동-00000
+              </li>
+              <li class="text-secondary mb-1">
+                리투리주식회사(주)는 통신판매중개자이며, 통신판매의 당사자가
+                아닙니다.
+              </li>
+              <li class="text-secondary mb-1">
+                상품, 상품정보제공 및 거래에 관한 의무와 책임은 판매자에게
+                있습니다.
+              </li>
+              <li class="text-secondary mb-1">
+                COPYRIGHT (C) HYUNDAI GLOVIS CO., LTD. ALL RIGHTS RESERVED.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
