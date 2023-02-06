@@ -1,0 +1,22 @@
+.searchSelect {
+  margin: 10px auto;
+}
+
+.filterName {
+  font-size: 14px;
+  margin: 10px 0;
+}
+@font-face {
+  font-family: SCDream4;
+  src: url("./SCDream4.otf");
+}
+* {
+  font-family: SCDream4;
+}
+
+div > table {
+  /* position: absolute; */
+  /* display: flex; */
+  /* display: block; */
+  /* display: flexbox; */
+}
