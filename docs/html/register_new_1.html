@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/register_new.css">
+    <link rel="stylesheet" href="../css/register_new_1.css">
     <link rel="stylesheet" href="../css/header.css">
     <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -96,7 +96,7 @@
             <tr>
                 <td>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="allAccept">
+                        <input class="form-check-input" type="checkbox" id="allAccept" onclick="checkAll();">
                         <label class="form-check-label" for="allAccept">전체 동의하기(필수/선택항목)</label>
                     </div>
                     <hr />
@@ -105,7 +105,7 @@
             <tr>
                 <td>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="termsAndConditions">
+                        <input class="form-check-input" type="checkbox" id="termsAndConditions" name="checkRow">
                         <label class="form-check-label" for="termsAndConditions">이용약관(필수)</label>
                         <!-- 이용약관 전문 모달 -->
                         <a href="#modalTarget1" data-bs-toggle="modal" class="text-decoration-none text-secondary small">내용보기</a>
@@ -147,21 +147,22 @@
                         <br>
                 </td>
             </tr>
+            <tr>
                 <td>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="personalInforRequired">
+                        <input class="form-check-input" type="checkbox" id="personalInforRequired" name="checkRow">
                         <label class="form-check-label" for="personalInforRequired">개인정보 수집/이용에 대한 안내(필수)</label>
-                        <!-- 이용약관 전문 모달 -->
+                        <!-- 개인정보 전문 모달 -->
                         <a href="#modalTarget2" data-bs-toggle="modal" class="text-decoration-none text-secondary small">내용보기</a>
                         <div class="modal" id="modalTarget2">
                             <div class="modal-dialog modal-dialog-scrollable modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <div class="modal-title">개인정보 수집/이용에 대한 안내</div>
+                                        <div class="modal-title">개인정보 수집/이용에 대한 안내(필수)</div>
                                         <button class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body small">
-                                        <table class="table">
+                                        <table class="table table-bordered">
                                             <thead>
                                                 <th scope="col">수집 및 이용 목적</th>
                                                 <th scope="col">수집 및 이용 항목</th>
@@ -197,13 +198,13 @@
                                                         </div>
                                                         </td>
                                                         <td rowspan="6">
-                                                            <div>
+                                                            <div class="fw-bold">
                                                                 회원 탈퇴 요청시까지
                                                             </div>
-                                                            <div>
+                                                            <div class="fw-bold">
                                                                 * 단, 관계법령에 의해 보관해야 하는 정보는 법령이 정한 기간 동안 보관
                                                             </div>
-                                                            <div>* 부정 이용 방지를 위하여 회사 내부 방침에서 정한 기간 동안 보관</div>
+                                                            <div class="fw-bold">* 부정 이용 방지를 위하여 회사 내부 방침에서 정한 기간 동안 보관</div>
                                                         </td>
                                                 </tr>
                                                 <tr>
@@ -211,12 +212,15 @@
                                                     <td>
                                                         <div>
                                                             <개인회원>
-이메일, 연락처(휴대전화번호)
+                                                        </div>
+                                                        <div>
+                                                            이메일, 연락처(휴대전화번호)
                                                         </div>
                                                         <div>
                                                             <개인회원(소셜가입)>
-네이버, 카카오, 구글 :
-이메일, 연락처(휴대전화번호)
+                                                        </div>
+                                                        <div>
+                                                            네이버, 카카오, 구글 : 이메일, 연락처(휴대전화번호)
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -232,6 +236,29 @@
                                                         <div>생년월일</div>
                                                     </td>
                                                 </tr>
+
+                                                <tr>
+                                                    <td>회원의 서비스 이용에 대한 통계 분석</td>
+                                                    <td>
+                                                        <div><개인회원></div>
+                                                        <div>생년월일, 성별, 주소(시/구)</div>
+                                                        <div><개인회원(소셜가입)></div>
+                                                        <div>네이버 : 성별</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>엔카 모바일 앱(App) 알림서비스 제공, 통계학적 특성에 따른 맞춤서비스 제공(* 모바일앱 이용시에만 해당)</td>
+                                                    <td>
+                                                        <div><개인회원>, <개인회원(소셜가입)></div>
+                                                        <div>UUID(앱ID), PushID</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>차량광고시 지역 검색 결과 노출에 이용</td>
+                                                    <td>주소기반추출 좌푯값(위도,경도)</td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -243,11 +270,180 @@
                     <div class="small m-2">개인정보 수집/이용에 대한 동의를 거부할 수 있으며, 이 경우 회원가입이 제한됩니다.</div>
                     <br>
                 </td>
+            </tr>
+            
             <tr>
-                
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="personalInforOptional" name="checkRow">
+                        <label class="form-check-label" for="personalInforOptional">개인정보 수집/이용에 대한 안내(선택)</label> 
+                        <!-- 개인정보 전문 모달 -->
+                        <a href="#modalTarget3" data-bs-toggle="modal" class="text-decoration-none text-secondary small">내용보기</a>
+                        <div class="modal" id="modalTarget3">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">개인정보 수집/이용에 대한 안내(선택)</div>
+                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body small">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <th scope="col">수집 및 이용 목적</th>
+                                                <th scope="col">수집 및 이용 항목</th>
+                                                <th scope="col">보유 및 이용 기간</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>고지사항 전달 및 본인의사확인, 불만처리, 사용자 구분 등 원활한 의사소통 경로의 확보</td>
+                                                    <td>
+                                                        <div><개인회원></div>
+                                                        <div>연락처(전화번호)</div>
+                                                    </td>
+                                                    <td rowspan="2">
+                                                        <div class="fw-bold">
+                                                            회원탈퇴시 또는 동의철회시
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>회원의 서비스 이용에 대한 통계 분석</td>
+                                                    <td>
+                                                        <div><개인회원(소셜가입)></div>
+                                                        <div>카카오 : 성별, 생일</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <br>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="regulation" name="checkRow">
+                        <label class="form-check-label" for="regulation">리투리 규정에 대한 안내(필수)</label>
+                        <!-- 리투리 규정 모달 -->
+                        <a href="#modalTarget4" data-bs-toggle="modal" class="text-decoration-none text-secondary small">내용보기</a>
+                        <div class="modal" id="modalTarget4">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">리투리 규정에 대한 안내</div>
+                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body small">
+                                        엔카닷컴(주)에 회원가입 신청하시는 분께 차량 광고등록에 관련한 제한사항에 대해 안내해 드리니, 자세히 읽은 후 동의해 주시기 바랍니다.
+
+광고제한
+1) 허위매물로 신고가 접수되어 관리자에 의해 확인된 차량
+2) 딜러 회원이 개인 ID를 생성하여 등록한 개인 위장 매물
+3) 차량의 실 소유주(차주)에게 허위매물로 신고된 차량
+4) 차량이 판매되었으나 삭제하지 않은 모든 차량
+5) 사이트 이용정지 시 등록되어 있는 모든 차량
+6) 딜러 회원이 소속된 단지 차량이 아닌 타 단지에 등록된 차량
+7) 실소유주(차주) 또는 동일 상사 직원이 감가 사유 없이 현저히 낮은 금액으로 광고하는 차량
+8) 소속 조합에 정상 제시되지 않은 차량
+9) 사진상 차량번호와 광고에 입력된 차량번호가 다른 차량
+10) 개인 정보를 실제와 다르게 입력한 회원의 등록된 모든 차량
+11) 판매 약관, 이용약관 및 관리자의 안내에 반하여 사이트에 등록된 모든 차량
+※ 허위매물 신고 접수 후 7일 이내 관리자 요청 서류를 통한 소명 가능, 기간 이후 신고 삭제 불가
+
+사이트 이용 정지
+- 1년 이용 정지
+1) 관리자에 의해 허위매물 등록자로 확인된 경우 신고 횟수에 상관없이 1년 이용정지
+2) 허위매물 신고 5회 받을 시 1년 이용정지
+3) 자동 업데이트, 차량등록 프로그램 등 서버에 무리를 주는 불법 프로그램 사용 적발 시 허위매물 신고와 상관없이 1년 이용정지
+4) 사이트 내의 게시판 혹은 회원 광고 차량 구매 문의에 과도한 매입 광고를 한 경우 1년 이용정지
+5) 타인의 개인 연락처를 도용하여 사용하는 경우 1년 이용정지
+- 영구 이용 정지
+1) 기존 이용 정지자가 다른 ID를 사용해서 차량을 등록하거나, 등록 시도를 하는 경우 신고 횟수와 상관없이 영구 이용정지
+2) 기존 이용 정지자의 정보를 입력하거나 사용 또는 사용 시도 하는 경우 영구 이용정지
+3) 명백한 사기행위, 공서양속에 반하는 행위를 한 이용자의 경우 영구 이용정지
+4) 이용정지 2회 누적 시 영구 이용정지
+5) 이용정지 상태가 아닌 허위매물 신고 누적 횟수가 4회 이상일 땐 환불 요청이 가능하지만, 해당 ID 영구 이용정지 조치 후 환불 규정에 따라 환불 처리
+※ 이용정지시 로그인, 차량등록 제한 및 등록차량 삭제, 등록비 등 일체 비용 환불 불가
+
+상사 제한
+동일 상사에 소속된 딜러 회원 중 이용 정지자가 3명 이상 발생한 경우 아래와 같이 처리
+
+1) 해당 상사에서 보유한 모든 차량, 엔카 광고등록 제한
+2) 해당 상사에 소속된 모든 회원, 엔카 이용 제한
+※ 명백한 사기행위, 공서양속에 반하는 행위를 한 상사 직원 확인 시 정지자 수 상관없이 상사 제한 가능
+
+개인정보 도용
+타인의 주민등록번호를 도용하여 ID를 생성한 경우 신고횟수와 상관없이 영구 제명되며 형사고발을 통해 처벌될 수 있음
+※2006년 9월 24일 개정된 주민등록법 제21조 2항 제9호에 의거, 3년 이하의 징역 또는 1천만 원 이하의 벌금 부과
+
+허위 신고자 이용제한 및 허위 신고 기준
+1) 보복성으로 허위 신고를 한 경우 허위 신고 횟수에 상관없이 1년 이용정지
+2) 신고 내용에 의미 없는 내용으로만 작성하여 신고한 경우
+3) 신고내용이 사실과 다른 경우
+4) 허위매물 허위 신고가 5건 누적되는 경우 1년 이용정지
+5) 관리자에 의해 악의적인 허위신고라 판단되는 경우 신고 횟수와 상관없이 1년 이용정지
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small m-2">
+                        리투리(주)에 회원가입 신청하시는 분께 차량 광고등록에 관련한 제한사항에 대해 안내해 드리니, 자세히 읽은 후 동의해 주시기 바랍니다.</div>
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="regulation" name="checkRow">
+                        <label class="form-check-label" for="regulation">마케팅 정보 수신 및 활용 동의(선택)</label>
+                        <!-- 마케팅 수신 모달 -->
+                        <a href="#modalTarget5" data-bs-toggle="modal" class="text-decoration-none text-secondary small">내용보기</a>
+                        <div class="modal" id="modalTarget5">
+                            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="modal-title">마케팅 정보 수신 및 활용 동의</div>
+                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body small">
+                                        <table class="table table-bordered">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <th scope="col">수집 및 이용 목적</th>
+                                                    <th scope="col">수집 및 이용 항목</th>
+                                                    <th scope="col">보유 및 이용 기간</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            신규 서비스 및 이벤트 정보 안내, 사은품 발송, 통계학적 특성에 따른 서비스 제공, 이용자의 서비스이용에 대한 통계
+                                                        </td>
+                                                        <td>이름, 생년월일, 성별, 연락처(휴대전화번호, 전화번호), 이메일, 주소</td>
+                                                        <td class="fw-bold">회원탈퇴시 또는 동의철회시</td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small m-2">개인정보 수집/이용에 대한 동의를 거부할 수 있으며, 이 경우 회원가입이 제한됩니다.</div>
+                    <br>
+                </td>
             </tr>
         </table>
-        <div>딜러 회원가입 페이지로 이동</div>
+        <div class="text-center m-3" >
+            <a href="" class="nextBtn">다음</a>
+        </div>
     </div>
     
 
@@ -293,5 +489,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
 </body>
 </html>
