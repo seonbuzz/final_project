@@ -1,4 +1,4 @@
-.product-device {
+/* .product-device {
   position: absolute;
   right: 10%;
   bottom: -30%;
@@ -7,7 +7,7 @@
   background-color: #333;
   border-radius: 21px;
   transform: rotate(30deg);
-}
+} */
 /* @media (min-width: 768px)
 .d-md-block {
     display: block!important;
@@ -44,6 +44,30 @@ user agent stylesheet div {
   transform: translate(-50%, -50%);
   color: white;
 }
-.list_btn {
-  justify-content: space-between;
+.background-wrap {
+  background-image: url("../image/0FC9AB54-92A7-417F-8A9C-5E96CA9ACD45.png");
+  /* background-size: 272px 196px; */
+  width: 272px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1 p a {
+  color: white;
+}
+
+.content span:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content span:nth-child(2) {
+  font-size: 20px;
 }
