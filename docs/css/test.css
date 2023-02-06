@@ -75,8 +75,10 @@ body {
 
 /* Container for image text */
 .caption-container {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  background-color: #222;
+  background-color: rgba(157, 155, 155, 0.233);
   padding: 2px 16px;
   color: white;
 }
@@ -101,4 +103,16 @@ body {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.view-wrap.live .view-car-name {
+  float: left;
+  width: 676px;
+  height: 365px;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  padding: 50px 60px 0 60px;
+  margin-right: 2%;
+  border-radius: 8px px;
+  position: relative;
 }
