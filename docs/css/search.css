@@ -14,9 +14,12 @@
   font-family: SCDream4;
 }
 
-div > table {
-  /* position: absolute; */
-  /* display: flex; */
-  /* display: block; */
-  /* display: flexbox; */
+.text {
+  margin-right: 10px;
+}
+.text_right {
+  float: right;
+}
+.magin {
+  margin-right: 4px;
 }
