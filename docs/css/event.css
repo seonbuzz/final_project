@@ -75,3 +75,10 @@ user agent stylesheet div {
 .content span:nth-child(2) {
   font-size: 20px;
 }
+@font-face {
+  font-family: SCDream4;
+  src: url("./SCDream4.otf");
+}
+* {
+  font-family: SCDream4;
+}
