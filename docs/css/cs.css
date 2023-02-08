@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"); */
 
 /* *{
     font-family: 'Noto Serif KR', serif;
@@ -46,16 +46,16 @@
 .wid {
   width: 150px;
 }
-ul {
+.cs_ul {
   margin-top: 20px;
   list-style: none;
 }
 
-a {
+.cs_a {
   text-decoration-line: none;
   font-size: 1.2rem;
 }
-li {
+.cs_li {
   padding-bottom: 10px;
 }
 a:link {
