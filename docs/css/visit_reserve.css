@@ -9,3 +9,8 @@ table {
   margin-right: auto;
   width: 80%;
 }
+
+.car_check {
+  text-decoration: none;
+  color: inherit;
+}
