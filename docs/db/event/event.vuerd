@@ -1,0 +1,139 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "EVENT",
+        "comment": "이벤트",
+        "columns": [
+          {
+            "name": "EVENT_UID",
+            "comment": "이벤트 아이디",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.50393676757812,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 87.44886779785156,
+              "widthDefault": 60
+            },
+            "id": "77340512-4684-4ab0-916c-fd0f72e65ada"
+          },
+          {
+            "name": "TITLE",
+            "comment": "이벤트 제목",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 87.44886779785156,
+              "widthDefault": 60
+            },
+            "id": "4dfdcbbd-a8ac-41fd-b418-3e5fc4b1c70d"
+          },
+          {
+            "name": "CONTENT",
+            "comment": "이벤트 내용",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 87.44886779785156,
+              "widthDefault": 60
+            },
+            "id": "bf7eaf11-d984-494a-baca-d0f87b1a4ae4"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 11,
+          "top": 24,
+          "zIndex": 11,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "bc664a8c-081f-4359-b016-d712d50ce91e"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": []
+  }
+}
