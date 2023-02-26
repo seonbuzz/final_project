@@ -7,18 +7,6 @@
   padding: 0;
 } */
 
-form {
-  background-color: #edf1f9;
-  border-radius: 5px;
-  padding: 20px;
-  box-sizing: 30px;
-  margin-bottom: 70px;
-  margin-top: 30px;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 label {
   display: inline-block;
   margin: 10px 0;
@@ -45,4 +33,16 @@ select {
 
 select {
   padding: 10px;
+}
+
+.boxcolor {
+  background-color: #edf1f9;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: 30px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
