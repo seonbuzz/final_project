@@ -157,23 +157,21 @@
                   <th scope="col" class="table-primary text-center">생일</th>
                   <th scope="col" class="table-primary text-center">전화번호</th>
                   <th scope="col" class="table-primary text-center">메일아이디</th>
-                  <th scope="col" class="table-primary text-center">거주지</th>
-                  <th scope="col" class="table-primary text-center">시구군</th>
+                  <th scope="col" class="table-primary text-center">권한</th>
                   <th scope="col" class="table-primary text-center">관리</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col"> <div class="justify-content-center d-flex">
+                  <th scope="col">김태희</th>
+                  <th scope="col">kim12345</th>
+                  <th scope="col">19820516</th>
+                  <th scope="col">01012345678</th>
+                  <th scope="col">kim123@gmail.com</th>
+                  <th scope="col">ROLE_USER</th>
+                 <th scope="col"> <div class="justify-content-center d-flex">
                     <div>
-                      <form action="/edit/${resultData.USERS_UID}" method="post">
+                      <form action="/edit/${resultData.USER_ID}" method="post">
                         <button
                           type="submit"
                           class="btn btn-sm btn-outline-primary">
@@ -182,7 +180,7 @@
                       </form>
                     </div>
                     <div>
-                      <form action="/delete/${resultData.USERS_UID}" method="post" class="ps-2">
+                      <form action="/delete/${resultData.USER_ID}" method="post" class="ps-2">
                         <button
                           type="submit"
                           class="btn btn btn-sm btn-outline-danger">
@@ -190,109 +188,19 @@
                         </button>
                       </form>
                     </div>
-                  </div></th>
+                  </div>
                 </tr>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col"> <div class="justify-content-center d-flex">
-                    <div>
-                      <form action="/edit/${resultData.USERS_UID}" method="post">
-                        <button
-                          type="submit"
-                          class="btn btn-sm btn-outline-primary">
-                          수정
-                        </button>
-                      </form>
-                    </div>
-                    <div>
-                      <form action="/delete/${resultData.USERS_UID}" method="post" class="ps-2">
-                        <button
-                          type="submit"
-                          class="btn btn btn-sm btn-outline-danger">
-                          삭제
-                        </button>
-                      </form>
-                    </div>
-                  </div></th>
-                </tr>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col"> <div class="justify-content-center d-flex">
-                    <div>
-                      <form action="/edit/${resultData.USERS_UID}" method="post">
-                        <button
-                          type="submit"
-                          class="btn btn-sm btn-outline-primary">
-                          수정
-                        </button>
-                      </form>
-                    </div>
-                    <div>
-                      <form action="/delete/${resultData.USERS_UID}" method="post" class="ps-2">
-                        <button
-                          type="submit"
-                          class="btn btn btn-sm btn-outline-danger">
-                          삭제
-                        </button>
-                      </form>
-                    </div>
-                  </div></th>
-                </tr>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col">Handle</th>
-                  <th scope="col"> <div class="justify-content-center d-flex">
-                    <div>
-                      <form action="/edit/${resultData.USERS_UID}" method="post">
-                        <button
-                          type="submit"
-                          class="btn btn-sm btn-outline-primary">
-                          수정
-                        </button>
-                      </form>
-                    </div>
-                    <div>
-                      <form action="/delete/${resultData.USERS_UID}" method="post" class="ps-2">
-                        <button
-                          type="submit"
-                          class="btn btn btn-sm btn-outline-danger">
-                          삭제
-                        </button>
-                      </form>
-                    </div>
-                  </div></th>
-                </tr>
-               
               </tbody>
             </table>
-            <div class="text-center m-3" >
-              <form action="./user_info_admin_edit.html" method="get">
-                  <button class="btn btn-sl btn-outline-secondary">회원추가</button>
-              </form>
-            </div>
+        
            </div>
           </div>
 
         </div>
       </div>
       </div>
+            
+               
         
       <!-- 푸터 -->
       <footer class="border-top pt-4 container">
